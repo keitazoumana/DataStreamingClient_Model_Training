@@ -1,0 +1,43 @@
+stages:
+  get_data:
+    cmd: python get_data.py
+    deps:
+    - get_data.py
+    outs:
+    - data/raw/airline_sentiment_data.csv
+
+  prepare_data:
+    cmd: python prepare_data.py
+    deps:
+    - prepare_data.py
+    - data/raw/airline_sentiment_data.csv
+    outs:
+    - data/preprocessed/airline_sentiment_preprocessed_data.csv
+
+  split_data:
+    cmd: python split_data.py
+    deps:
+    - split_data.py
+    - data/preprocessed/airline_sentiment_preprocessed_data.csv
+
+  train_model:
+    cmd: python train_model.py
+    deps:
+    - split_data.py
+    - train_model.py
+    - data/preprocessed/airline_sentiment_preprocessed_data.csv
+    
+    outs:
+    - metadata/metrics.json
+    - model/finetuned_finBERT_epoch_1.model
+
+  mlflow_tracking:
+    deps:
+    - metadata/metrics.json
+    - config.yaml
+
+  upload_metadata:
+    cmd: python upload_metadata.py
+    deps:
+      - model/finetuned_finBERT_epoch_1.model
+      - data/preprocessed/airline_sentiment_preprocessed_data.csv

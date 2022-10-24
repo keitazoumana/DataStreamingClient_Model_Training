@@ -1,0 +1,4 @@
+Batch_size: 32
+Epoch: 1
+Epsilon: 1e-8
+Learning_rate: 1e-5

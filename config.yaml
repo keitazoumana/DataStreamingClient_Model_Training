@@ -1,0 +1,37 @@
+credentials:
+  github:
+    PERSONAL_ACCESS_TOKEN: "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"
+
+  aws:
+    ACCESS_KEY_ID: "AKIAQ2YJKANVJUVGHWSQ"
+    SECRET_ACCESS_KEY: "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"
+
+  mlflow_credentials:
+    MLFLOW_TRACKING_URI: "https://dagshub.com/zoumana.keita/DataStreamingClient_Model_Training.mlflow"
+    MLFLOW_TRACKING_USERNAME: "zoumana.keita"
+    MLFLOW_TRACKING_PASSWORD: "eb68a4accdf21c0dffe8f3defeca181d4a7fd6f5"
+  
+  repo_info:
+    OWNER_NAME: "zoumana.keita"
+    REPO_NAME: "DataStreamingClient_Model_Training"
+
+  dvc_config:
+    DAGSHUB_REMOTE_URL: ""
+    USERNAME: "zoumana.keita"
+    PASSWORD: "eb68a4accdf21c0dffe8f3defeca181d4a7fd6f5"
+
+  metadata_path:
+    METRICS_PATH: "./metrics"
+    METRICS_FILE: "./metrics/metrics.json"
+    MODEL_PATH: "./model"
+    MODEL_NAME: "finetuned_finBERT_epoch_1.model"
+    PREPROCESSED_DATA_PATH: "./data/preprocessed"
+    PREPROCESSED_FILE_NAME: "airline_sentiment_preprocessed_data.csv"
+
+
+  model_parameters:
+    LEARNING_RATE: 1e-5
+    EPSILON: 1e-8
+    BATCH_SIZE: 32
+    EPOCHS: 1
+
