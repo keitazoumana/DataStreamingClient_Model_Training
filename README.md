@@ -1,4 +1,4 @@
-# How to improve your model training with DagsHub Streaming Client on EC2 instance.   
+# How to improve your model training with DagsHub Direct Data Access on EC2 instance.   
 
 <p align="center">
   <img src="./images/dagshub_cml_gitact_ec2.png" alt="DagsHub + Actions + EC2 + CML" height="200"/>
@@ -7,7 +7,7 @@
 ## Main Concepts Covered 
 After completing this repository, you will be able to understand the following concepts: 
 - Provision an [AWS EC2](https://aws.amazon.com/fr/ec2/) and running the training of a [BERT](https://huggingface.co/docs/transformers/model_doc/bert) model  with [CML](https://cml.dev/)
-- Apply DagsHub Streaming Client to improve your training process. 
+- Apply DagsHub Direct Data Access to improve your training process. 
 - Implement a Github actions pipeline using the previous instance. 
 - Automatically log your models metrics with [MLFlow](https://mlflow.org/).    
 - Compare the model performance with MLflow Experiment. 
