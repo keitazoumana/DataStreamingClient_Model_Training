@@ -68,4 +68,4 @@ Below is the general workflow of the pipeline.
 
 
 
-## Full Article Coming Soon On Medium 
+## Full Article Coming Soon On [Medium](https://medium.com/mlearning-ai/speed-up-your-model-training-with-dagshub-direct-data-access-on-aws-58835fc952d)
